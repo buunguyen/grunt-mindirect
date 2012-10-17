@@ -9,6 +9,7 @@ This task is typically used together with [grunt-contrib-copy](https://github.co
 Install the module with: `npm install grunt-mindirect`
 
 Then load it from your `grunt.js` file:
+
 ```js
 grunt.loadNpmTasks('grunt-mindirect');
 ```
