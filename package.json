@@ -1,6 +1,6 @@
 {
   "name": "grunt-mindirect",
-  "description": "Minify files in-place using UglifyJS",
+  "description": "Minify files directly using UglifyJS",
   "version": "0.1.0",
   "homepage": "https://github.com/buunguyen/grunt-mindirect",
   "author": {
@@ -30,7 +30,7 @@
   "keywords": [
     "gruntplugin"
   ],
-  "readme": "# grunt-mindirect\n\n[Grunt](https://github.com/cowboy/grunt) [multi-task](https://github.com/cowboy/grunt/blob/master/docs/types_of_tasks.md) for minifying JS files and overwriting them with minified contents (as opposed to the built-in [min](https://github.com/gruntjs/grunt/blob/master/docs/task_min.md) task which creates one single output with concatenated minified contents).\n\nThis task is typically used together with [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy/) task.\n\n## Getting Started\n\nInstall the module with: `npm install grunt-mindirect`\n\nThen load it from your `grunt.js` file:\n\n```js\ngrunt.loadNpmTasks('grunt-mindirect');\n```\n\nIn your `grunt.js` file, add something like below:\n\n```js\nmindirect: {\n\tall: [\"lib/*.js\", \"scripts/*.js\"]\n}\n```\n\nAfter the task is run, all matched files will have their contents minified.\n\n## License\nCopyright (c) 2012 Buu Nguyen\nLicensed under the MIT license.\n",
+  "readme": "# grunt-mindirect\n[Grunt](https://github.com/cowboy/grunt) [multi-task](https://github.com/cowboy/grunt/blob/master/docs/types_of_tasks.md) for minifying JS files and overwriting them with minified contents.\n\nThis is different from the [built-in min task](https://github.com/gruntjs/grunt/blob/master/docs/task_min.md) which creates one single output with concatenated minified contents).\n\nThis task is typically used together with [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy/) task.\n\n## Getting Started\n\nInstall the module with: `npm install grunt-mindirect`\n\nThen load it from your `grunt.js` file:\n```js\ngrunt.loadNpmTasks('grunt-mindirect');\n```\n\nIn your `grunt.js` file, add something like below:\n\n```js\nmindirect: {\n\tfiles: ['dist/libs/editor.js', 'dist/scripts/*.js']\n}\n```\n\nAfter the task is run, all matched files will have their contents minified.\n\n## License\nCopyright (c) 2012 Buu Nguyen\nLicensed under the MIT license.",
     "_id": "grunt-mindirect@0.1.0",
   "_from": "grunt-mindirect@0.1.0"
 }

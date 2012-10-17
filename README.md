@@ -7,6 +7,7 @@ This task is typically used together with [grunt-contrib-copy](https://github.co
 
 ## Getting Started
 Install the module with: `npm install grunt-mindirect`
+
 Then load it from your `grunt.js` file:
 ```js
 grunt.loadNpmTasks('grunt-mindirect');
@@ -16,7 +17,7 @@ In your `grunt.js` file, add something like below:
 
 ```js
 mindirect: {
-	all: ["lib/*.js", "scripts/*.js"]
+	files: ['dist/libs/editor.js', 'dist/scripts/*.js']
 }
 ```
 

@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  grunt.registerMultiTask('mindirect', 'Minify files in-place using UglifyJS.', function() {
+  grunt.registerMultiTask('mindirect', 'Minify files directly using UglifyJS.', function() {
     var files = grunt.file.expandFiles(this.data);
 	files.forEach(function(file) {
 	    var max = grunt.file.read(file);
