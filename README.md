@@ -1,5 +1,7 @@
 # grunt-mindirect
-[Grunt](https://github.com/cowboy/grunt) [multi-task](https://github.com/cowboy/grunt/blob/master/docs/types_of_tasks.md) for minifying JS files and overwriting them with minified contents (as opposed to the built-in [min](https://github.com/gruntjs/grunt/blob/master/docs/task_min.md) task which creates one single output with concatenated minified contents).
+[Grunt](https://github.com/cowboy/grunt) [multi-task](https://github.com/cowboy/grunt/blob/master/docs/types_of_tasks.md) for minifying JS files and overwriting them with minified contents.
+
+This is different from the [built-in min task](https://github.com/gruntjs/grunt/blob/master/docs/task_min.md) which creates one single output with concatenated minified contents).
 
 This task is typically used together with [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy/) task.
 
@@ -14,7 +16,7 @@ In your `grunt.js` file, add something like below:
 
 ```js
 mindirect: {
-	all: ["lib/\*.js", "scripts/\*.js"]
+	all: ["lib/*.js", "scripts/*.js"]
 }
 ```
 
