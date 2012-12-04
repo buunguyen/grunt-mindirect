@@ -18,7 +18,7 @@ In your `grunt.js` file, add something like below:
 
 ```js
 mindirect: {
-	files: ['dist/libs/editor.js', 'dist/scripts/*.js']
+	dist: ['dist/libs/editor.js', 'dist/scripts/*.js']
 }
 ```
 
